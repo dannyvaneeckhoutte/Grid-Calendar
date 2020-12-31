@@ -33,13 +33,15 @@ li {
   padding: 0.3em 0;
   border-radius: 0.2em;
   margin: 0.2em;
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.05s ease-in-out; }
   li:hover {
     background-color: azure;
     color: #203A43;
-    font-weight: bold; }
+    font-weight: bold;
+    box-shadow: 0px 2px 2px #0F2027; }
   li:active {
-    transform: translateY(2px); }
+    transform: translateY(1px);
+    box-shadow: none; }
   li.weekday {
     font-weight: bold; }
     li.weekday.sat {
@@ -58,7 +60,6 @@ li {
   width: 300px;
   background-color: rgba(44, 83, 100, 0.5);
   box-shadow: 0px 0px 6px rgba(15, 32, 39, 0.5);
-  border-top: 3px solid #97bdce;
   border-radius: 0.4em;
   transition: all 0.3s ease-in-out; }
   .month:hover {
@@ -80,10 +81,31 @@ h1 {
   grid-column-start: 1; }
 
 .march > .calendar > .first-day {
-  grid-column-start: 4; }
+  grid-column-start: 1; }
 
 .april > .calendar > .first-day {
   grid-column-start: 4; }
 
 .may > .calendar > .first-day {
+  grid-column-start: 6; }
+
+.june > .calendar > .first-day {
+  grid-column-start: 2; }
+
+.juli > .calendar > .first-day {
   grid-column-start: 4; }
+
+.august > .calendar > .first-day {
+  grid-column-start: 7; }
+
+.september > .calendar > .first-day {
+  grid-column-start: 3; }
+
+.october > .calendar > .first-day {
+  grid-column-start: 5; }
+
+.november > .calendar > .first-day {
+  grid-column-start: 1; }
+
+.december > .calendar > .first-day {
+  grid-column-start: 3; }
